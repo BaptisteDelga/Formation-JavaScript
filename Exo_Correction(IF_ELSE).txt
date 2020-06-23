@@ -1,0 +1,151 @@
+1 - Écrivez un programme JavaScript qui accepte deux entiers et affiche le plus grand
+
+function check() {
+    var nbr1, nbr2;
+    nbr1 = Number(document.getElementById("myInput1").value);
+    nbr2 = Number(document.getElementById("myInput2").value);
+
+    if (nbr1 > nbr2) {
+        alert(nbr1 + " est plus grand que " + nbr2);
+    	}
+    	else if (nbr2 > nbr1) {
+        alert(nbr2 + " est plus grand que " + nbr1);
+    	}
+    }
+
+OU
+
+function check() {
+    var nbr1, nbr2;
+    nbr1 = Number(document.getElementById("myInput1").value);
+    nbr2 = Number(document.getElementById("myInput2").value);
+
+    alert(Math.max(nbr1, nbr2))
+
+    }
+
+    Entrez le premier nombre : <input id="myInput1">
+    Entrez le deuxième nombre : <input id="myInput2">
+    <button onclick="check()">Vérifier</button>
+
+2 - Écrivez une instruction conditionnelle JavaScript pour trier trois nombres. Afficher une boîte d'alerte pour afficher le résultat
+
+ 	function check2() {
+            var nbr1, nbr2, nbr3;
+            nbr1 = Number(document.getElementById("myInput3").value);
+            nbr2 = Number(document.getElementById("myInput4").value);
+            nbr3 = Number(document.getElementById("myInput5").value);
+
+            if (nbr1 > nbr2 && nbr1 > nbr3) {
+                if (nbr2 > nbr3) {
+                    alert(nbr1 + ", " + nbr2 + ", " + nbr3);
+                }
+                else {
+                    alert(nbr1 + ", " + nbr3 + ", " + nbr2);
+                }
+            }
+            else if (nbr2 > nbr1 && nbr2 > nbr3) {
+                if (nbr1 > nbr3) {
+                    alert(nbr2 + ", " + nbr1 + ", " + nbr3);
+                }
+                else {
+                    alert(nbr2 + ", " + nbr3 + ", " + nbr1);
+                }
+            }
+            else if (nbr3 > nbr1 && nbr3 > nbr2) {
+                if (nbr1 > nbr2) {
+                    alert(nbr3 + ", " + nbr1 + ", " + nbr2);
+                }
+                else {
+                    alert(nbr3 + ", " + nbr2 + ", " + nbr1);
+                }
+
+
+
+    Entrez le premier nombre : <input id="myInput3">
+    Entrez le deuxième nombre : <input id="myInput4">
+    Entrez le troisième nombre : <input id="myInput5">
+    <button onclick="check2()">Vérifier</button>
+
+3 - Écrivez une instruction conditionnelle JavaScript pour trouver le plus grand des cinq nombres. Affichez une boîte d'alerte pour afficher le résultat.
+
+
+    function check3() {
+    var nbr1, nbr2, nbr3, nbr4, nbr5;
+    nbr1 = Number(document.getElementById("myInput6").value);
+    nbr2 = Number(document.getElementById("myInput7").value);
+    nbr3 = Number(document.getElementById("myInput8").value);
+    nbr4 = Number(document.getElementById("myInput9").value);
+    nbr5 = Number(document.getElementById("myInput10").value);
+
+    if (nbr1 > nbr2 && nbr1 > nbr3 && nbr1 > nbr4 && nbr1 > nbr5) {
+        alert(nbr1);
+    }
+    else if (nbr2 > nbr1 && nbr2 > nbr3 && nbr2 > nbr4 && nbr2 > nbr5) {
+        alert(nbr2);
+    }
+    else if (nbr3 > nbr1 && nbr3 > nbr2 && nbr3 > nbr4 && nbr3 > nbr5) {
+        alert(nbr3);
+    }
+    else if (nbr4 > nbr1 && nbr4 > nbr3 && nbr4 > nbr2 && nbr4 > nbr5) {
+        alert(nbr4);
+    }
+    else {
+        alert(nbr5);
+    }
+}
+    
+    Entrez le premier nombre : <input id="myInput6">
+    Entrez le deuxième nombre : <input id="myInput7">
+    Entrez le troisième nombre : <input id="myInput8">
+    Entrez le quatrième nombre : <input id="myInput9">
+    Entrez le cinquième nombre : <input id="myInput10">
+    <button onclick="check3()">Vérifier</button>
+
+function check3() {
+    var nbr1, nbr2, nbr3, nbr4, nbr5;
+    nbr1 = Number(document.getElementById("myInput6").value);
+    nbr2 = Number(document.getElementById("myInput7").value);
+    nbr3 = Number(document.getElementById("myInput8").value);
+    nbr4 = Number(document.getElementById("myInput9").value);
+    nbr5 = Number(document.getElementById("myInput10").value);
+
+    if (nbr1 > nbr2 && nbr1 > nbr3 && nbr1 > nbr4 && nbr1 > nbr5) {
+        alert(nbr1);
+    }
+    else if (nbr2 > nbr1 && nbr2 > nbr3 && nbr2 > nbr4 && nbr2 > nbr5) {
+        alert(nbr2);
+    }
+    else if (nbr3 > nbr1 && nbr3 > nbr2 && nbr3 > nbr4 && nbr3 > nbr5) {
+        alert(nbr3);
+    }
+    else if (nbr4 > nbr1 && nbr4 > nbr3 && nbr4 > nbr2 && nbr4 > nbr5) {
+        alert(nbr4);
+    }
+    else {
+        alert(nbr5);
+    }
+}
+
+OU
+
+function check3() {
+    var nbr1, nbr2, nbr3, nbr4, nbr5;
+    nbr1 = Number(document.getElementById("myInput6").value);
+    nbr2 = Number(document.getElementById("myInput7").value);
+    nbr3 = Number(document.getElementById("myInput8").value);
+    nbr4 = Number(document.getElementById("myInput9").value);
+    nbr5 = Number(document.getElementById("myInput10").value);
+
+    alert(Math.max(nbr1, nbr2, nbr3, nbr4, nbr5))
+}
+
+
+    
+    Entrez le premier nombre : <input id="myInput6">
+    Entrez le deuxième nombre : <input id="myInput7">
+    Entrez le troisième nombre : <input id="myInput8">
+    Entrez le quatrième nombre : <input id="myInput9">
+    Entrez le cinquième nombre : <input id="myInput10">
+    <button onclick="check3()">Vérifier</button>
+
